@@ -15,12 +15,12 @@
 #
 # * Basic Settings
 #
-user		= mysql
+user = mysql
 # pid-file	= /var/run/mysqld/mysqld.pid
 # socket	= /var/run/mysqld/mysqld.sock
 
-port		= 3306
-# port		= 443
+port	= 3306
+# port	= 443
 
 datadir	= /var/lib/mysql
 # datadir	= /var/data/mysql
@@ -28,32 +28,32 @@ datadir	= /var/lib/mysql
 
 # If MySQL is running as a replication slave, this should be
 # changed. Ref https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_tmpdir
-# tmpdir		= /tmp
+# tmpdir	= /tmp
 #
 # Instead of skip-networking the default is now to listen only on
 # localhost which is more compatible and is not less secure.
 
-bind-address		= 0.0.0.0
-# bind-address		= 127.0.0.1
+bind-address	= 0.0.0.0
+# bind-address	= 127.0.0.1
 
 mysqlx-bind-address	= 127.0.0.1
 #
 # * Fine Tuning
 #
-key_buffer_size		= 16M
-# max_allowed_packet	= 64M
-# thread_stack		= 256K
+key_buffer_size	= 16M
+# max_allowed_packet = 64M
+# thread_stack	= 256K
 
-# thread_cache_size       = -1
+# thread_cache_size = -1
 
 # This replaces the startup script and checks MyISAM tables if needed
 # the first time they are touched
-myisam-recover-options  = BACKUP
+myisam-recover-options = BACKUP
 
-# max_connections        = 5
-max_connections        = 151
+# max_connections = 5
+max_connections = 151
 
-# table_open_cache       = 4000
+# table_open_cache = 4000
 
 #
 # * Logging and Replication
@@ -62,8 +62,8 @@ max_connections        = 151
 #
 # Log all queries
 # Be aware that this log type is a performance killer.
-# general_log_file        = /var/log/mysql/query.log
-# general_log             = 1
+# general_log_file = /var/log/mysql/query.log
+# general_log = 1
 #
 # Error log - should be very few entries.
 #
@@ -85,9 +85,9 @@ long_query_time = 2
 # The following can be used as easy to replay backup logs or for replication.
 # note: if you are setting up a replication slave, see README.Debian about
 #       other settings you may need to change.
-# server-id		= 1
-# log_bin			= /var/log/mysql/mysql-bin.log
+# server-id	= 1
+# log_bin	= /var/log/mysql/mysql-bin.log
 # binlog_expire_logs_seconds	= 2592000
-max_binlog_size   = 100M
-# binlog_do_db		= include_database_name
+max_binlog_size = 100M
+# binlog_do_db	= include_database_name
 # binlog_ignore_db	= include_database_name
